@@ -1,9 +1,9 @@
 <!-- Unit 12 Project
 Requirements
-[  ] $() Select by Element, ID AND Class 
-[  ] Use Three Different jQuery Methods 
-[  ] Add Five CSS Declarations
-[  ] Include Three Images
+[yes] $() Select by Element, ID AND Class 
+[yes] Use Three Different jQuery Methods 
+[yes] Add Five CSS Declarations
+[yes] Include Three Images
 
 Select ONE Additional 
 [ no ] Feature 1 - Use .addClass() method
@@ -22,39 +22,68 @@ Select ONE Additional
     <link href="style.css" rel="stylesheet" type="text/css" />
   </head>
   <body>
-    <button id="mem1-button">Memory #1</button>
-    <button id="mem2-button">Memory #2</button>
-    <button id="mem3-button">Memory #3</button>
-    <h1>My Top 3 Memories of <span>This Year</span></h1>
-    <ol>
+    <button id="mem1-button">click me first!</button>
+    <button id="mem2-button">okaaay now click me!</button>
+    <button id="mem3-button">save me for last :D</button>
+    <h1>My Top 3 Music Artists ♡</h1>
+    <ul>
       <li>
-        <h3 id="mem1">Memory #1</h3>
-        <p>More about this memory.</p>
+        <h3 id="mem1">click my button to reveal me :D</h3>
+        <p class="flofacts">❤︎❤︎❤︎</p>
+        <img
+           id="flo"
+           src= "https://cdn.glitch.global/ff6aeb33-bfee-4b2e-8000-2676b47ace73/IMG_0107.jpeg?v=1745425782686"
+          width="450"
+          style="display: none"
+             />
       </li>
 
       <li>
-        <h3 id="mem2">Memory #2</h3>
-        <p>More about this memory.</p>
+        <h3 id="mem2">guess what.. click the second one</h3>
+        <p class="doechiifacts">❤︎❤︎❤︎</p>
+        <img
+           id="doechii"
+           src= "https://cdn.glitch.global/ff6aeb33-bfee-4b2e-8000-2676b47ace73/IMG_0108.jpeg?v=1745425984680"
+          width="450"
+          style="display: none"
+             />
       </li>
 
       <li>
-        <h3 id="mem3">Memory #3</h3>
-        <p>More about this memory</p>
+        <h3 id="mem3">girl. you know what to do already.</h3>
+        <p class="sabrinafacts">❤︎❤︎❤︎</p>
+        <img
+           id="sabrina"
+           src= "https://cdn.glitch.global/ff6aeb33-bfee-4b2e-8000-2676b47ace73/IMG_0109.jpeg?v=1745426068309"
+          width="450"
+          style="display: none"
+             />
       </li>
-    </ol>
+      </li>
+    </ul>
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
     <script>
       $("#mem1-button").click(function () {
-        $("#mem1").css("color", "purple");
+        $("#mem1").css("color", "pink");
+        $("#mem1").text("FLO!");
+        $("#flo").show(2000);
+        $(".flofacts").text("aren't they so pretty? their voices together are chef's kiss!!")
+        $("")
       });
 
       $("#mem2-button").click(function () {
-        $("#mem2").css("color", "blue");
+        $("#mem2").css("color", "pink");
+        $("#mem2").text("doechii!");
+        $("#doechii").show(2000);
+        $(".doechiifacts").text("thank GOODNESS for tyler, the creator featuring her on one of his songs. i wish i could've gotten into her music sooner.")
       });
 
       $("#mem3-button").click(function () {
-        $("#mem3").css("color", "green");
+        $("#mem3").css("color", "pink");
+        $("#mem3").text("sabrina carpenter!");
+        $("#sabrina").show(2000);
+        $(".sabrinafacts").text("my disney channel OGGGGG! you know i had to include her after making an entire project only about her.")
       });
     </script>
   </body>
